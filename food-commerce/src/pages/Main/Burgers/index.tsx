@@ -1,6 +1,6 @@
 import { Head } from '../../../components/Head'
 import { SnackTitle } from '../../../components/SnackTitle'
-
+import { Snacks } from '../../../components/Snacks'
 export default function Burgers() {
 
   const data = [
@@ -10,7 +10,7 @@ export default function Burgers() {
       name: 'Mega',
       description: 'Artesanal grande',
       price: 25.5,
-      Image:'https://i.imgur.com/upjIUnG.jpg'
+      image:'https://i.imgur.com/upjIUnG.jpg'
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ export default function Burgers() {
       name: 'Extra bacon',
       description: 'Artesanal pequeno',
       price: 15.5,
-      Image:'https://i.imgur.com/B4J04AJ.jpg'
+      image:'https://i.imgur.com/B4J04AJ.jpg'
     },
   ]
 
@@ -26,6 +26,7 @@ export default function Burgers() {
     <>
       <Head title='Hambúrgueres'/>
       <SnackTitle>Hambúrgueres</SnackTitle>
+      <Snacks snacks={data}></Snacks>
     </>
   )
 }

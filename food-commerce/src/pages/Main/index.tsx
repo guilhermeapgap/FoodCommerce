@@ -8,12 +8,11 @@ import logoImg from '../../assets/logo.svg'
 export default function Main() {
   return (
     <Container>
-      <Sidebar/> 
+      <Sidebar />
       <section>
-        <img src={logoImg}/>
-        <Outlet/>
+        <img src={logoImg} />
+        <Outlet />
       </section>
-        
     </Container>
   )
 }
