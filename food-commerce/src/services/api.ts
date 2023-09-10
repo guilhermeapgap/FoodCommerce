@@ -1,5 +1,7 @@
 import axios from 'axios'
 
+import { SnackData } from '../interfaces/SnackData'
+
 const api = axios.create({
   //baseURL: process.env.REACT_APP_API_BASE_URL,
   baseURL: 'http://localhost:5000/'
@@ -7,9 +9,9 @@ const api = axios.create({
 
 
 
-export const getBurgers = () => api.get('/burgers')
-export const getPizzas = () => api.get('/pizzas')
-export const getDrinks = () => api.get('/Drinks')
-export const getIceCreams = () => api.get('/ice-creams')
+export const getBurgers = () => api.get<SnackData[]>('/burgers')
+export const getPizzas = () => api.get<SnackData[]>('/pizzas')
+export const getDrinks = () => api.get<SnackData[]>('/Drinks')
+export const getIceCreams = () => api.get<SnackData[]>('/ice-creams')
 
 export default api
