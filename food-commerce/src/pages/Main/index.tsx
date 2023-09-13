@@ -1,10 +1,11 @@
-import { Outlet } from 'react-router-dom' //componente para renderizar subpaginas
+import { Outlet } from 'react-router-dom'
 
 import { Sidebar } from '../../components/Sidebar'
 
 import { Container } from './styles'
 
 import logoImg from '../../assets/logo.svg'
+
 export default function Main() {
   return (
     <Container>
@@ -16,6 +17,3 @@ export default function Main() {
     </Container>
   )
 }
-
-
-    

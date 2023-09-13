@@ -1,25 +1,12 @@
-import { useState, useEffect } from 'react'
-
+import { useContext } from 'react'
+import { SnackContext } from '../../../App'
 
 import { Head } from '../../../components/Head'
 import { Snacks } from '../../../components/Snacks'
 import { SnackTitle } from '../../../components/SnackTitle'
 
-import { getPizzas } from '../../../services/api'
-import { SnackData } from '../../../interfaces/SnackData'
-
 export default function Pizzas() {
-
-  const [pizzas, setPizzas] = useState<SnackData[]>([])
-
-  useEffect(()=>{
-    (async () => {
-      const burgerRequest = await getPizzas()
-
-      setPizzas(burgerRequest.data)
-    })()
-  }, [])
-
+  const { pizzas } = useContext(SnackContext)
 
   return (
     <>
