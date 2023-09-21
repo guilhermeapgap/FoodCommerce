@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { EmptyCart } from '../../../components/EmptyCart'
 import { useCart } from '../../../hooks/useCart'
 
 import { TableDesktop } from './TableDesktop'
@@ -20,7 +21,7 @@ export function Table() {
     }
   }, [])
 
-  if (cart.length === 0) return <h1>Ops! Parece que você não tem pedidos, peça já!</h1>
+  if (cart.length === 0) return <EmptyCart title='Ops! Parece que você não tem pedidos, peça já!' />
 
   return windowWidth > 768 ? <TableDesktop /> : <TableMobile />
 }

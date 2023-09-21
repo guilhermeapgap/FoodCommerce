@@ -1,16 +1,14 @@
 import { Head } from '../../components/Head'
 import { OrderHeader } from '../../components/OrderHeader'
 
-import { Table } from './Table'
+import { Container, Inner } from './styles'
 
-import { Container } from './styles'
-
-export default function Main() {
+export default function Payment() {
   return (
     <Container>
-      <Head title='Carrinho' />
+      <Head title='Pagamento' />
       <OrderHeader />
-      <Table />
+      <Inner>Formulário</Inner>
     </Container>
   )
 }
