@@ -114,7 +114,7 @@ export default function Payment() {
           <h4>Pagamento</h4>
 
           <div className='field'>
-            <label htmlFor='credit-card-number'>Número do cartão</label>
+            <label htmlFor='credit-card-number'>Número do cartão </label>
             <input
               type='text'
               id='credit-card-number'
