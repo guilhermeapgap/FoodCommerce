@@ -16,7 +16,7 @@ export const Container = styled.div`
     background: ${({ theme }) => theme.colors.black};
     padding: 1.75rem 1.5rem;
     border-radius: 4px;
-    
+
     span {
       position: absolute;
       top: -0.5rem;
@@ -34,6 +34,7 @@ export const Container = styled.div`
       font-weight: 500;
       font-size: 1.125rem;
     }
+
     h2 {
       margin-bottom: 0.75rem;
       font-weight: 700;
@@ -82,10 +83,9 @@ export const Container = styled.div`
           height: 1.5rem;
         }
 
-        &:hover{
-          background:${darken(.1,'#aa2424')};
+        &:hover {
+          background: ${darken(0.1, '#AA2424')};
         }
-        
       }
     }
   }

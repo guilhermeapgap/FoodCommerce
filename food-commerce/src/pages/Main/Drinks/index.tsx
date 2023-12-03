@@ -7,7 +7,6 @@ import { SnackTitle } from '../../../components/SnackTitle'
 export default function Drinks() {
   const { drinks } = useSnack()
 
-
   return (
     <>
       <Head title='Bebidas' />

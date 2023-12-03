@@ -1,7 +1,7 @@
-import styled, {css} from "styled-components";
+import styled, { css } from 'styled-components'
 
 interface ContainerProps {
-    isMenuOpen: boolean
+  isMenuOpen: boolean
 }
 
 export const Container = styled.aside<ContainerProps>`

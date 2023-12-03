@@ -1,9 +1,11 @@
-import { Title } from "./styles"
-import { ReactNode } from "react"
+import { ReactNode } from 'react'
+
+import { Title } from './styles'
 
 interface TitleProps {
-    children: ReactNode;
+  children: ReactNode
 }
+
 export function SnackTitle({ children }: TitleProps) {
-    return <Title>{children}</Title>
-  }
+  return <Title>{children}</Title>
+}
